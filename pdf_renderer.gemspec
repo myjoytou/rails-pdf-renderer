@@ -9,15 +9,16 @@ Gem::Specification.new do |s|
   s.version     = PdfRenderer::VERSION
   s.authors     = ["Vivek Kumar"]
   s.email       = ["vivek@socialfrontier.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of PdfRenderer."
-  s.description = "TODO: Description of PdfRenderer."
+  s.homepage    = "http://www.example.com"
+  s.summary     = "Summary of PdfRenderer."
+  s.description = "Description of PdfRenderer."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.2.6"
+  s.add_dependency "prawn", "0.12.0"
 
   s.add_development_dependency "sqlite3"
 end
